@@ -1,3 +1,4 @@
+/* Global styles */
 *{
   margin: 0;
   padding: 0;
@@ -12,22 +13,48 @@ body{
 
 h1,h2,h3,h4{font-weight: 400;}
 
+* button{
+  cursor: pointer;
+  outline: transparent;
+}
+
+.color-btn{
+  padding: 4px 8px;
+  background-image: linear-gradient(to right bottom, rgb(119, 157, 226), cornflowerblue);
+  border: transparent;
+  border-radius: .2rem;
+  box-shadow: 1px 1px 2px 0 gray;
+  color: white;
+  font-weight: bold;
+}
+
+input:focus{
+  outline: none;
+  box-shadow: 0 0 1px 2px rgb(38, 104, 226);
+}
+
+.dark-box{
+  background-image: linear-gradient(rgb(63, 63, 63), rgb(48, 48, 48), rgb(10, 25, 49));
+  box-shadow: 1px 1px 3px 0 rgb(37, 37, 37);
+  border: transparent;
+  color: white;
+}
+
+.line{
+  width: 70%;
+  margin: 0 auto;
+  height: 3px;
+  background-image: linear-gradient(70deg, rgba(84, 125, 238, 0), rgb(114, 120, 202) 20%, rgba(84, 125, 238, 0) 100%);
+}
+/*-----*/
+
+/* Navbar styles */
 .navbar{
   padding: 15px;
   display: flex;
   gap: 8px;
   justify-content: center;
   align-items: center;
-}
-
-* button{
-  cursor: pointer;
-  outline: transparent;
-}
-
-input:focus{
-  outline: none;
-  box-shadow: 0 0 1px 2px rgb(38, 104, 226);
 }
 
 .searchbar{
@@ -42,17 +69,9 @@ input:focus{
 .search-btn{
   height: 30px;
 }
+/*-----*/
 
-.color-btn{
-  padding: 4px 8px;
-  background-image: linear-gradient(to right bottom, rgb(119, 157, 226), cornflowerblue);
-  border: transparent;
-  border-radius: .2rem;
-  box-shadow: 1px 1px 2px 0 gray;
-  color: white;
-  font-weight: bold;
-}
-
+/* Layout styles */
 .grid{
   width: 90%;
   /* margin: 0 auto; */
@@ -66,17 +85,12 @@ input:focus{
   margin: 40px auto;
 }
 
-.dark-box{
-  background-image: linear-gradient(rgb(63, 63, 63), rgb(48, 48, 48), rgb(10, 25, 49));
-  box-shadow: 1px 1px 3px 0 rgb(37, 37, 37);
-  border: transparent;
-  color: white;
-}
-
 .sidebar{
   margin: 30px 0  30px 10px;
 }
+/*-----*/
 
+/* Main content styles */
 .menu{
   margin: 20px auto;
   display: flex;
@@ -119,18 +133,13 @@ input:focus{
 
 .title{text-align: center;}
 
-.line{
-  width: 70%;
-  margin: 0 auto;
-  height: 3px;
-  background-image: linear-gradient(70deg, rgba(84, 125, 238, 0), rgb(114, 120, 202) 20%, rgba(84, 125, 238, 0) 100%);
-}
-
 .content footer{
   display: flex;
   justify-content: space-between;
 }
+/*-----*/
 
+/* Sidebar styles */
 .card{
   background-color: white;
   box-shadow: 0 1px 16px 0 rgb(100, 113, 129);
@@ -139,8 +148,7 @@ input:focus{
 .card-container{
   padding: 40px 20px;
   display: flex;
-  flex-direction: column;
-  
+  flex-direction: column;  
 }
 
 .profile{
@@ -208,8 +216,7 @@ input:focus{
   margin-top: 40px;
   gap: 9px;
   text-align: center;
-  justify-content: space-evenly;
-  
+  justify-content: space-evenly;  
 }
 
 .counters-box h4{
@@ -223,9 +230,9 @@ input:focus{
   border-radius: .4rem;
   color: white;
   background-image: linear-gradient(rgb(106, 154, 243), rgb(114, 120, 202));
-  box-shadow: 0 0 4px 1px #ccc;
-  
+  box-shadow: 0 0 4px 1px #ccc;  
 }
+/*-----*/
 
 .footer{
   text-align: center;
