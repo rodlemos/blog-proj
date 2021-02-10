@@ -132,13 +132,15 @@ input:focus{
 }
 
 .card{
+  background-color: white;
+  box-shadow: 0 1px 16px 0 rgb(100, 113, 129);
+}
+
+.card-container{
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  width: 100%;
-  background-color: white;
-  box-shadow: 0 1px 16px 0 rgb(100, 113, 129);
+  
 }
 
 .profile{
@@ -203,10 +205,11 @@ input:focus{
 
 .counters-box{
   display: flex;
-  margin-top: 30px;
-  gap: 8px;
+  margin-top: 40px;
+  gap: 9px;
   text-align: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  
 }
 
 .counters-box h4{
@@ -215,12 +218,13 @@ input:focus{
 
 .counters-box span{
   display: block;
-  width: 80%;
   margin: 0 auto;
+  padding: 1px 0;
+  border-radius: .4rem;
   color: white;
   background-image: linear-gradient(rgb(106, 154, 243), rgb(114, 120, 202));
-  border-radius: .3rem;
-  box-shadow: 0 0 3px 1px #ccc;
+  box-shadow: 0 0 4px 1px #ccc;
+  
 }
 
 .footer{
